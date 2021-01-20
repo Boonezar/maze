@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang = "en-US">
+    <head>
+        <meta charset = "UTF-8">
+        <title>Maze</title>
+        <link rel="shortcut icon" type="image/x-icon" href="sam.png" />
+        <script src = "scripts/gameloop.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body onload="showOptionButtons()">
+        <header>
+            <h1>Browser Maze Game</h1>
+        </header>
+        <div class="main-section">
+            <div class="left">
+                <h2>Score</h2>
+                <h3>Time</h3>
+                <p id="time-counter">0</p>
+                <h3>Score</h3>
+                <p id="score">0</p>
+                <h2>Controls</h2>
+                <h3>Movement</h3><p>WASD / IJKL / Arrow Keys</p>
+                <h3>Show Score</h3><p>Y</p>
+                <h3>Show Hint</h3><p>H</p>
+                <h3>Show Shortest Path</h3><p>P</p>
+                <h3>Show Bread Crumbs</h3><p>B</p>
+            </div>
+            <canvas class="center" height="600" width="600" id="maze-canvas"></canvas>
+            <div class="right" id="right-table"></div>
+        </div>
+    </body>
+</html>
